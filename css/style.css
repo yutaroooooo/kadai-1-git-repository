@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* 共通部分
+----------------------------------------------------*/
+html {
+    font-size: 80%;
+}
+body {
+    font-size: 14px;
+    color: #5e7a8f;
+    font-family: 'Arial', 'YuGothic', 'Yu Gothic', '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', serif;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+/* HEADER
+----------------------------------------------------*/
+.logo {
+    width: 180px;
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	margin-left: -90px;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav a {
+    color: #000;
+}
+
+.main-nav a:hover {
+    color: #FFFF01;
+}
