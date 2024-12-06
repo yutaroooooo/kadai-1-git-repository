@@ -30,6 +30,7 @@ img {
 
 .main-nav {
     display: flex;
+    justify-content: flex-end;
     font-size: 1rem;
     text-transform: uppercase;
     margin-top: 34px;
