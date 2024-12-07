@@ -7,8 +7,11 @@ html {
 }
 body {
     font-size: 14px;
+    font-weight: bold;
     color: #5e7a8f;
     font-family: 'Arial', 'YuGothic', 'Yu Gothic', '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', serif;
+    line-height: 1.5em;
+    -webkit-text-size-adjust: 100%;
 }
 a {
     text-decoration: none;
@@ -23,9 +26,13 @@ img {
 	display: block;
 	margin: 0 auto;
 	position: absolute;
-	top: 10px;
+	top: 0px;
 	left: 50%;
-	margin-left: -90px;
+	margin-left: 0px;
+}
+.logo {
+    position: inherit;
+    margin: 10px 30px;
 }
 
 .main-nav {
@@ -33,18 +40,56 @@ img {
     justify-content: flex-end;
     font-size: 1rem;
     text-transform: uppercase;
-    margin-top: 34px;
+    margin: -34px 300px;
     list-style: none;
 }
 
 .main-nav li {
-    margin-left: 36px;
+    margin-left: 40px;
 }
 
 .main-nav a {
     color: #000;
 }
 
-.main-nav a:hover {
-    color: #FFFF01;
+.main-nav a{
+    text-decoration: none;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+        text-decoration-color: yellow;
+    }
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.btn {
+    display: none;
+}
+
+.btn {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    top: 15px;
+}
+/* TOP-PAGE
+----------------------------------------------------*/
+#top-page {
+    background: url(img/main-visual.png) center top no-repeat;
+    background-size: 180%;
+    background-color: #FFF;
+    padding: 200px 20px 80px 20px;
+    position: relative;
+    z-index: 2;
 }
