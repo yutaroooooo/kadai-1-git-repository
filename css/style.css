@@ -3,7 +3,7 @@
 /* 共通部分
 ----------------------------------------------------*/
 html {
-    font-size: 80%;
+    font-size: 85%;
 }
 body {
     font-size: 14px;
@@ -19,6 +19,13 @@ a {
 img {
     max-width: 100%;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
 /* HEADER
 ----------------------------------------------------*/
 .logo {
@@ -28,42 +35,106 @@ img {
 	position: absolute;
 	top: 0px;
 	left: 50%;
-	margin-left: 0px;
+    margin-top: -20px;
+	margin-left: 180px;
 }
 .logo {
     position: inherit;
-    margin-top: 34px;
 }
 
-#nav {
-    display: flex;
+div {
+    margin: 0;
+    padding: 0;
 }
 
+.container {
+    padding: 0 20px;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+#header {
+    padding: 20px 0;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* ナビゲーションメニュー
+----------------------------------------------------*/
 .main-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-top: -60px;
     font-size: 1rem;
     text-transform: uppercase;
-    margin: -40px 300px;
     list-style: none;
 }
 
-.main-nav li {
-    margin-left: 36px;
+.main-nav ul li {
+    display: table-cell;
+    margin: 0 ;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-bottom: none;
 }
 
-.main-nav a {
+.main-nav ul li a {
     color: #000;
+    background: transparent;
+    display: block;
+    padding: 0 10px;
+    overflow: hidden;
+    position: relative;
 }
 
-.main-nav a{
-    text-decoration: none;
+.main-nav ul li a {
+    display: block;
+    font-weight: bold;
+    color: #000;
+    line-height: 40px;
+    padding: 0 20px;
+    background: #fff;
+    position: relative;
+}
+
+.main-nav ul li a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ffff01;
+    bottom: -4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
     }
     
-    a:hover{
-        text-decoration: underline;
-        text-decoration-color: yellow;
+.main-nav ul li a:hover::after {
+    visibility: visible;
+    bottom: 5px;
+    opacity: 1;
     }
+/* ここまで
+----------------------------------------------------*/
 
 .wrapper {
     max-width: 1100px;
@@ -75,9 +146,7 @@ img {
     padding: 0 20px;
 }
 
-.btn {
-    display: none;
-}
+
 
 .btn {
     width: 22px;
@@ -97,17 +166,19 @@ img {
 
 #layer01 {
     text-align: center;
-    margin: -275px;
+    margin: -400px 20px;
 }
 #layer02 {
     text-align: center;
-    margin: -475px;
+    margin: -375px;
 }
 #layer03 {
     text-align: center;
     width: 60px;
     height: 60px;
-    margin: 650px;
+    margin-top: 450px;
+    margin-left: 670px;
+
 }
 /*layer text
 -----------------------------*/
@@ -123,6 +194,6 @@ img {
 }
 
 #layer04 {
-    margin: -625px;
+    margin: 20px;
 }
 
