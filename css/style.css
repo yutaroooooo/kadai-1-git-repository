@@ -32,20 +32,24 @@ img {
 }
 .logo {
     position: inherit;
-    margin: 10px 30px;
+    margin-top: 34px;
+}
+
+#nav {
+    display: flex;
 }
 
 .main-nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     font-size: 1rem;
     text-transform: uppercase;
-    margin: -34px 300px;
+    margin: -40px 300px;
     list-style: none;
 }
 
 .main-nav li {
-    margin-left: 40px;
+    margin-left: 36px;
 }
 
 .main-nav a {
@@ -83,13 +87,42 @@ img {
     position: relative;
     top: 15px;
 }
-/* TOP-PAGE
+/* images
 ----------------------------------------------------*/
 #top-page {
-    background: url(img/main-visual.png) center top no-repeat;
-    background-size: 180%;
-    background-color: #FFF;
-    padding: 200px 20px 80px 20px;
+    padding: 340px 20px 80px 20px;
     position: relative;
     z-index: 2;
 }
+
+#layer01 {
+    text-align: center;
+    margin: -275px;
+}
+#layer02 {
+    text-align: center;
+    margin: -475px;
+}
+#layer03 {
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    margin: 650px;
+}
+/*layer text
+-----------------------------*/
+#top-page p {
+    font-weight: bold;
+    color: #000;
+}
+#layer04 {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.25em;
+    line-height: 2.2;
+}
+
+#layer04 {
+    margin: -625px;
+}
+
