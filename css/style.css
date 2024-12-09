@@ -170,8 +170,10 @@ h1 {
 }
 #layer02 {
     text-align: center;
-    margin: -375px;
+    margin: -375px 100px;
+    width:1200px;
 }
+
 #layer03 {
     text-align: center;
     width: 60px;
@@ -196,4 +198,258 @@ h1 {
 #layer04 {
     margin: 20px;
 }
+
+/*corporate section
+-----------------------------*/
+#corporate {
+    background: #5e7a8f;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 530px;
+    padding-bottom: 120px;
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+}
+
+.light01 {
+    width: 30px;
+    height: 140px;
+    background: url(/Users/Nucky/Desktop/札友電材株式会社/img/light01.png) 0 0 ;
+    background-size: contain;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -15px;
+    z-index: 2;
+}
+
+#corporate .container {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.front {
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.ttl {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+img {
+    border: 0;
+    vertical-align: bottom;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+#corporate .row {
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#corporate .box {
+    max-width: 390px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 60px;
+    color: #FFF;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 60px;
+}
+
+
+
+#corporate figure {
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+#corporate figure {
+    text-align: center;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+}
+
+#corporate figure img {
+    width: 100%;
+    vertical-align: top;
+    max-width: 180px;
+}
+
+#corporate .box p {
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 0.4em;
+}
+
+/*アニメーション swing
+-----------------------------*/
+element.style {
+    visibility: visible;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-name: swing;
+}
+
+
+  
+  @keyframes swing {
+    20% {
+      -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+      transform: rotate(15deg);
+    }
+  
+    40% {
+      -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+    }
+  
+    60% {
+      -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+      transform: rotate(5deg);
+    }
+  
+    80% {
+      -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+  
+  .swing {
+    -moz-animation: swing linear 1s;
+    -moz-transform-origin: center;
+    -webkit-animation: swing linear 1s;
+    -webkit-transform-origin: center;
+    -ms-animation: swing linear 1s;
+    -ms-transform-origin: center;
+    -o-animation: swing linear 1s;
+    -o-transform-origin:center;
+    animation: swing linear 1s;
+    transform-origin: center;
+    display: block;
+    float:left;
+  }
+
+/*アニメーション rotatein
+-----------------------------*/
+  .rotateIn{
+    animation:rotateIn 1s ease  1s 1 normal backwards;
+  }
+  @keyframes rotateIn{
+    0% {
+        -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-transform: rotate(-200deg);
+        -ms-transform: rotate(-200deg);
+        transform: rotate(-200deg);
+        opacity: 0;
+      }
+    
+      100% {
+        -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1;
+      }
+  }
+
+/*アニメーション fadeinup
+-----------------------------*/
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-duration: 1.6s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+
+/*アニメーション fadein
+-----------------------------*/
+.fadeIn {
+    padding: 10px;
+    animation: fadeIn 3s ease 1s 1 normal backwards;
+  }
+   
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
