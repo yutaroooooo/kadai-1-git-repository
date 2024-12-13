@@ -27,6 +27,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     font-weight: normal;
 }
+li {
+    list-style: none;
+}
 /* HEADER
 ----------------------------------------------------*/
 .logo {
@@ -522,8 +525,8 @@ element.style {
 
 #compliance .box p {
     font-weight: normal;
-    font-size: 20px;
-    letter-spacing: 0.4em;
+    font-size: 16px;
+    letter-spacing: 0.05em;
 }
 
 #compliance .tableStyle01 {
@@ -532,6 +535,7 @@ element.style {
 }
 
 #compliance .tableStyle01 dt {
+    font-weight: normal;
     float: left;
 }
 
@@ -549,6 +553,7 @@ element.style {
 }
 
 .dd {
+    font-weight: normal;
     display: block;
     margin-inline-start: 40px;
     unicode-bidi: isolate;
@@ -557,24 +562,110 @@ element.style {
 /*関連企業
 -----------------------------*/
 
-#compliance dl {
-	line-height: 2em;
-	overflow: hidden;
+#compliance {
+	font-size: 16px;
+	letter-spacing: 0.05em;
+    font-weight: normal;
 }
-.profile, #compliance .group {
+#compliance .container {
+	max-width: 980px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+#compliance h3 img {
+	max-width: 100%;
+}
+
+#compliance .tableStyle01 dd {
+	padding-left: 100px;
+}
+#compliance .row {
+	overflow: hidden;
 	margin-bottom: 60px;
 }
 
-#compliance .name {
-	font-size: 16px;
-	text-align: center;
-	margin-bottom: 10px;
+#compliance .box {
+	max-width: 450px;
+	margin: 0 auto;
 }
-#compliance .add {
+#compliance .profile { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+#compliance .group { 
+    float: left; margin: 0 auto;
+}
+#compliance .chart { 
+    float: right; margin: 0 auto; 
+}
+#compliance .name {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+}
+/*ボタン
+-----------------------------*/
+.btnArea {
+	text-align: center;
+	padding-top: 60px;
+}
+.btnStyle01 {
+	width: 280px;
+	font-size: 16px;
+	line-height: 40px;
+	color: #FFF;
+	border: 2px solid #5e7a8f;
+	background: #5e7a8f;
+	display: inline-block;
+	text-align: center;
+
+	-webkit-transition: all .25s linear;
+	   -moz-transition: all .25s linear;
+	    -ms-transition: all .25s linear;
+	     -o-transition: all .25s linear;
+	        transition: all .25s linear;
+}
+.btnStyle01:hover {
+	border-color: #5e7a8f;
+	background: #FFF;
+	color: #5e7a8f;
+}
+
+/*取り扱いメーカー
+-----------------------------*/
+#maker {
+	position: relative;
+	overflow: hidden;
+    margin-top: -530px;
+    margin-bottom: 530px;
+	padding-top: 150px;
+	padding-bottom: 80px;
+    background-color: #5e7a8f;
+}
+
+#maker .container {
+    max-width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+#maker li {
+	color: #FFF;
 	line-height: 2em;
 	text-align: center;
-	margin-bottom: 20px;
 }
-#compliance li {
-	text-align: center;
+
+#maker .row {
+	overflow: hidden;
+}
+#maker .left {
+	max-width: 400px;
+	float: left;
+}
+#maker .right {
+	max-width: 400px;
+	float: right;
 }
