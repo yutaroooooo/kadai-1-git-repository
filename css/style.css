@@ -6,13 +6,12 @@ html {
     font-size: 85%;
 }
 body {
-    width: 1440px;
     font-size: 14px;
     font-weight: normal;
     color: #5e7a8f;
     font-family: 'Arial', 'YuGothic', 'Yu Gothic', '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', serif;
     line-height: 1.5em;
-
+    width: 100%;
 }
 a {
     text-decoration: none;
@@ -29,6 +28,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 li {
     list-style: none;
+}
+
+#main {
+	background: #FFF;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 530px;
 }
 /* HEADER
 ----------------------------------------------------*/
@@ -52,7 +58,7 @@ div {
 }
 
 .container {
-    padding: 0 20px;
+    padding: 0;
 }
 
 h1 {
@@ -91,7 +97,7 @@ h1 {
 
 .main-nav {
 	float: right;
-	display: block !important;
+	display: block;
     justify-content: flex-end;
     margin-right: 100px;
     margin-top: -50px;
@@ -113,7 +119,7 @@ h1 {
     font-weight: bold;
     color: #000;
     line-height: 20px;
-    padding: 0 20px;
+    padding: 0;
     background: #fff;
     position: relative;
 }
@@ -134,13 +140,13 @@ h1 {
 ----------------------------------------------------*/
 
 .wrapper {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 4%;
+    max-width: 1440px;
+    margin: 0 ;
+    padding: 0 ;
 }
 
 .container {
-    padding: 0 20px;
+    padding: 0 ;
 }
 
 
@@ -159,7 +165,7 @@ h1 {
     background: url(/Users/Nucky/Desktop/札友電材株式会社/img/layer01.png) center top no-repeat;
 	background-size: 100%;
 	background-color: #FFF;
-	padding: 400px 20px 80px 20px;
+	padding: 400px 0px 10px 0px;
 	position: relative;
 	z-index: 2;
 }
@@ -193,6 +199,10 @@ h1 {
 
 /*corporate section
 -----------------------------*/
+#main p {
+    color: #fff;
+}
+
 #corporate {
     background: #5e7a8f;
     position: relative;
@@ -508,6 +518,7 @@ element.style {
 }
 
 #compliance .box p {
+    color: #5e7a8f;
     font-weight: normal;
     font-size: 16px;
     letter-spacing: 0.05em;
@@ -851,3 +862,63 @@ label.error:before {
 	display: block;
 	margin: 0 auto 20px auto;
 }
+/*info
+-----------------------------*/
+#footer {
+	width: 100%;
+	letter-spacing: 0.1em;
+	font-size: 10px;
+	line-height: 60px;
+	color: #FFF;
+	text-align: center;
+	background: #000;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+/* 	Map
+-----------------------------*/
+#info {
+    box-shadow:0px 1px 3px -1px #000;
+    -moz-box-shadow:0px 1px 3px -1px #000;
+    -webkit-box-shadow:0px 1px 3px -1px #000;
+    }
+    
+    #map {
+        width: 100%;
+        height: 450px;
+    }
+
+    @-webkit-keyframes slideInRight {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(2000px);
+          transform: translateX(2000px);
+        }
+      
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes slideInRight {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(2000px);
+          -ms-transform: translateX(2000px);
+          transform: translateX(2000px);
+        }
+      
+        100% {
+          -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+      
+      .slideInRight {
+        -webkit-animation-name: slideInRight;
+        animation-name: slideInRight;
+      }
+      
