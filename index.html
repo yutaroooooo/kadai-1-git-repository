@@ -34,7 +34,6 @@
         </header>
 
     <div id="top-page">
-        <div id="layer01"><img src="img/layer01.png" alt=""></div>
         <div id="layer02" class="wow fadeIn" data-wow-during="1s" data-wow-delay="1s"><img src="img/visual_layer02.png" alt=""></div>
         <div id="layer03" class="wow rotateIn" data-wow-duration="1s" data-wow-delay="2s"><img src="img/visual_layer03.png" alt=""></div>
         <div id="layer04" class="taC fRegular wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s"><p>私たちは、世の中の変化を<br>いち早く掴み取り、対応して<br>お客様と共に永遠の成長を目指します。</p></div>
@@ -71,6 +70,7 @@
                 </div>
             </div>
         </div>
+        
            </section>
         
         <section id="compliance" class="bg">
@@ -176,6 +176,137 @@
             </div>
         </section>
 
+        <section id="products" class="bg">
+            <div class="light02 wow swing" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="2"></div>
+            <div class="container front">
+                <h2 class="ttl"><img src="img/ttl_products.png" alt="取扱製品"></h2>
+                <div class="row cols02 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="box left">
+                        <h3>照明器具</h3>
+                        <ul>
+                            <li>住宅・店舗照明器具</li>
+                            <li>施設照明器具</li>
+                            <li>屋外照明器具</li>
+                            <li>非常用照明器具</li>
+                            <li>シャンデリア類</li>
+                            <li>防爆型照明器具</li>
+                            <li>耐圧・安全増照明器具</li>
+                            <li>各種ランプ類</li>
+                        </ul>
+                    </div>
+                    <div class="box right">
+                        <h3>受配電設備・高低圧機器類</h3>
+                        <ul>
+                            <li>キュービクル</li>
+                            <li>トランス</li>
+                            <li>コンデンサ</li>
+                            <li>リアクトル</li>
+                            <li>高圧遮断機</li>
+                            <li>配分電盤</li>
+                            <li>監視盤</li>
+                            <li>制御盤</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row cols02 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="box left">
+                        <h3>音響・通信・防災等 弱電設備類</h3>
+                        <ul>
+                            <li>放送設備</li>
+                            <li>ITV設備</li>
+                            <li>火災報知設備</li>
+                            <li>防排煙設備</li>
+                            <li>インターホン設備</li>
+                            <li>トイレ呼出設備</li>
+                            <li>情報設備</li>
+                            <li>電話設備</li>
+                        </ul>
+                    </div>
+                    <div class="box right">
+                        <h3>発電機・セキュリティ・ビル設備類</h3>
+                        <ul>
+                            <li>非常用発電設備</li>
+                            <li>常用発電設備</li>
+                            <li>中央監視設備</li>
+                            <li>太陽光発電設備</li>
+                            <li>昇降機</li>
+                            <li>非常用電源</li>
+                            <li>蓄電池</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row cols02 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="box left">
+                        <h3>住宅設備・空調・ＯＡ機器類</h3>
+                        <ul>
+                            <li>住宅設備機器</li>
+                            <li>換気機器</li>
+                            <li>エアコン類</li>
+                            <li>空調配管部材</li>
+                            <li>ＯＡ用機器</li>
+                            <li>医療用機器</li>
+                            <li>防火区画貫通部材</li>
+                        </ul>
+                    </div>
+                    <div class="box right mb0">
+                        <h3>配管・配線材・<br>配線器具・装柱機材類</h3>
+                        <ul>
+                            <li>電線管類</li>
+                            <li>CD・PF</li>
+                            <li>ケーブルラック類</li>
+                            <li>ハンドホール類</li>
+                            <li>避雷針設備</li>
+                            <li>配線器具類</li>
+                            <li>手動開閉器類</li>
+                            <li>情報コンセント</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg">
+            <div class="light01 wow swing" data-wow-duration="1s" data-wow-delay="0s"></div>
+            <div class="container front">
+                <h2 class="ttl"><img src="img/ttl_contact.png" alt="お問い合わせ"></h2>
+                <div class="box">
+                    <h3>お電話でのお問合わせ</h3>
+                    <p class="tel">TEL：<a href="tel:0116136088">011-613-6088</a> <br>FAX：011-613-6090</p>
+                </div>
+                <div class="box mb0">
+                    <h3>メールフォームでのお問合わせ</h3>
+                    <div class="form">
+                        <form id="contactForm" method="post" action="contact/sendmail.php">
+                            <dl>
+                                <dt>御社名 <span class="requre">※</span></dt>
+                                <dd><input class="long" name="company" type="text"></dd>
+                                <dt>御担当者様 <span class="requre">※</span></dt>
+                                <dd><input  class="long" name="name" type="text"></dd>
+                                <dt>郵便番号</dt>
+                                <dd><input type="text" name="postcode"></dd>
+                                <dt>住所</dt>
+                                <dd><input class="medium" name="add" type="text"></dd>
+                                <dt>電話</dt>
+                                <dd><input class="medium" name="phone" type="text"></dd>
+                                <dt>FAX</dt>
+                                <dd><input class="medium" name="fax" type="text"></dd>
+                                <dt>メールアドレス <span class="requre">※</span></dt>
+                                <dd><input class="medium" name="mail" type="text"></dd>
+                                <dt>メールアドレス（※再度入力）</dt>
+                                <dd><input class="long" id="remail" name="remail" type="text"></dd>
+                                <dt>お問い合わせ内容 <span class="requre">※</span></dt>
+                                <dd><textarea class="long" name="text" id="" cols="30" rows="10"></textarea></dd>
+                            </dl>
+                            <div class="btnArea">
+                                <input type="hidden" name="token" value="711e4d5945a7a84e4308aa16f0107988f867be6a" />
+                                <input type="submit" value="送信する">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 </body>
