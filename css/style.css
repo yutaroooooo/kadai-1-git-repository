@@ -8,7 +8,7 @@ html {
 body {
     font-size: 14px;
     font-weight: normal;
-    color: #5e7a8f;
+    background-color: #fff;
     font-family: 'Arial', 'YuGothic', 'Yu Gothic', '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', serif;
     line-height: 1.5em;
     width: 100%;
@@ -82,14 +82,12 @@ h1 {
 	top: 0;
 	z-index: 999;
 }
-
-
-
 .clearfix:after {
     content: "";
     clear: both;
     display: block;
 }
+
 
 /* ナビゲーションメニュー
 ----------------------------------------------------*/
@@ -149,16 +147,6 @@ h1 {
     padding: 0 ;
 }
 
-
-
-.btn {
-    width: 22px;
-    height: 22px;
-    cursor: pointer;
-    float: right;
-    position: relative;
-    top: 15px;
-}
 /* images
 ----------------------------------------------------*/
 #top-page {
@@ -600,32 +588,6 @@ element.style {
     margin-bottom: 10px;
     letter-spacing: 0.05em;
 }
-/*ボタン
------------------------------*/
-.btnArea {
-	text-align: center;
-	padding-top: 60px;
-}
-.btnStyle01 {
-	width: 280px;
-	font-size: 16px;
-	line-height: 40px;
-	color: #FFF;
-	border: 2px solid #5e7a8f;
-	background: #5e7a8f;
-	display: inline-block;
-	text-align: center;
-	-webkit-transition: all .25s linear;
-	   -moz-transition: all .25s linear;
-	    -ms-transition: all .25s linear;
-	     -o-transition: all .25s linear;
-	        transition: all .25s linear;
-}
-.btnStyle01:hover {
-	border-color: #5e7a8f;
-	background: #FFF;
-	color: #5e7a8f;
-}
 
 /*取り扱いメーカー
 -----------------------------*/
@@ -838,9 +800,7 @@ label.error:before {
 }
 /*info
 -----------------------------*/
-#info .back_border span {
-	background-color: #5e7a8f;
-}
+
 #info {
 	position: relative;
 	overflow: hidden;
@@ -889,36 +849,52 @@ label.error:before {
         height: 450px;
     }
 
-    @-webkit-keyframes slideInRight {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateX(2000px);
-          transform: translateX(2000px);
-        }
-      
-        100% {
-          -webkit-transform: translateX(0);
-          transform: translateX(0);
-        }
-      }
-      
-      @keyframes slideInRight {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateX(2000px);
-          -ms-transform: translateX(2000px);
-          transform: translateX(2000px);
-        }
-      
-        100% {
-          -webkit-transform: translateX(0);
-          -ms-transform: translateX(0);
-          transform: translateX(0);
-        }
-      }
-      
-      .slideInRight {
-        -webkit-animation-name: slideInRight;
-        animation-name: slideInRight;
-      }
-      
+ /*  アニメーション　slideInRight
+-----------------------------*/
+.back_border {
+    color: #5e7a8f;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+@-webkit-keyframes slideInRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(2000px);
+      transform: translateX(2000px);
+    }
+  
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(2000px);
+      -ms-transform: translateX(2000px);
+      transform: translateX(2000px);
+    }
+  
+    100% {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .slideInRight {
+    height: 80px;
+    width: 100%;
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    visibility: visible; 
+    animation-duration: 1s; 
+    animation-delay: 0s; 
+  }
+
