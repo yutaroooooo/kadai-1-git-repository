@@ -192,7 +192,7 @@ h1 {
 }
 
 #corporate {
-    background: #5e7a8f;
+    background: #fff;
     position: relative;
     z-index: 2;
     padding-bottom: 120px;
@@ -228,7 +228,7 @@ h1 {
     padding: 0 20px;
 }
 
-.ttl {
+.ttl {position: relative;z-index: 3;
     text-align: center;
     margin-bottom: 80px;
 }
@@ -260,7 +260,7 @@ img {
     overflow: clip;
 }
 
-#corporate .row {
+#corporate .row {position: relative;z-index: 3;
     width: 100%;
     vertical-align: top;
     text-align: center;
@@ -268,7 +268,7 @@ img {
 	margin-bottom: 60px;
 }
 
-#corporate .box {
+#corporate .box {position: relative;z-index: 3;
     max-width: 390px;
     display: inline-block;
     vertical-align: top;
@@ -314,13 +314,7 @@ figure {
 
 /*アニメーション swing
 -----------------------------*/
-element.style {
-    visibility: visible;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    animation-iteration-count: 2;
-    animation-name: swing;
-}
+
 
 
   
@@ -373,13 +367,7 @@ element.style {
 
 /*アニメーション rotatein
 -----------------------------*/
-element.style {
-    height: 80px;
-    visibility: visible;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    animation-name: slideInRight;
-}
+
 
 .rotateIn{
     animation:rotateIn 1s ease  1s 1 normal backwards;
@@ -444,13 +432,12 @@ element.style {
 /*会社概要
 -----------------------------*/
 #compliance {
-    background: #fff;
+    background: #5e7a8f;
     position: relative;
     z-index: 2;
-    padding-bottom: 120px;
     overflow: hidden;
     padding-top: 150px;
-    padding-bottom: 80px;
+    padding-bottom: 150px;
     box-sizing: border-box;
 }
 
@@ -491,7 +478,7 @@ element.style {
 
 .ttl {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
 }
 
 #compliance .box {
@@ -563,9 +550,11 @@ element.style {
 	padding-left: 100px;
 }
 #compliance .row {
+    color: #5e7a8f;
 	overflow: hidden;
 	margin-bottom: 60px;
 }
+
 
 #compliance .box {
 	max-width: 450px;
@@ -588,7 +577,21 @@ element.style {
     margin-bottom: 10px;
     letter-spacing: 0.05em;
 }
-
+.btnArea {
+    text-align: center;
+    padding-top: 60px;
+}
+.btnStyle01 {
+    width: 280px;
+    font-size: 16px;
+    line-height: 40px;
+    color: #FFF;
+    border: 2px solid #5e7a8f;
+    background: #5e7a8f;
+    display: inline-block;
+    text-align: center;
+    transition: all .25s linear;
+}
 /*取り扱いメーカー
 -----------------------------*/
 #maker {
@@ -596,7 +599,7 @@ element.style {
 	overflow: hidden;
 	padding-top: 150px;
 	padding-bottom: 80px;
-    background-color: #5e7a8f;
+    background-color: #fff;
 }
 
 #maker .container {
@@ -634,6 +637,7 @@ element.style {
 	padding-bottom: 80px;
 	font-size: 16px;
 	letter-spacing: 0.05em;
+    background-color: #5e7a8f;
 }
 
 #products .container {
@@ -642,6 +646,7 @@ element.style {
 	box-sizing: border-box;
 }
 #products h3 {
+    color: #5e7a8f;
 	font-size: 18px;
 	padding: 10px;
 	text-align: center;
@@ -656,6 +661,7 @@ element.style {
 }
 
 #products li {
+    color: #5e7a8f;
 	text-align: center;
 	line-height: 2em;
 }
@@ -681,7 +687,7 @@ element.style {
 	padding-top: 150px;
 	padding-bottom: 80px;
     color: #FFF;
-    background-color: #5e7a8f;
+    background-color: #fff;
 }
 #contact h3 {
 	width: 330px;
@@ -849,52 +855,178 @@ label.error:before {
         height: 450px;
     }
 
- /*  アニメーション　slideInRight
+/* 	slideinright背景青
 -----------------------------*/
-.back_border {
-    color: #5e7a8f;
+
+#corporate .bg{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    margin: 0;
+    height: 100%;
     width: 100%;
+  }
+#corporate  .bg-wrap {
+    position: relative;
+    display: inline-block;
+    margin-top: -6px;
+    height: 80px;
+    width: 1440px;
+    animation: bg .5s linear;
+  }
+#corporate .bg.is-animated .bg-wrap::before {
+    animation: bg .5s linear;
+    background:#5e7a8f;
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
-}
-
-@-webkit-keyframes slideInRight {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(2000px);
-      transform: translateX(2000px);
-    }
-  
-    100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes slideInRight {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(2000px);
-      -ms-transform: translateX(2000px);
-      transform: translateX(2000px);
-    }
-  
-    100% {
-      -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-      transform: translateX(0);
-    }
-  }
-  
-  .slideInRight {
-    height: 80px;
     width: 100%;
-    -webkit-animation-name: slideInRight;
-    animation-name: slideInRight;
-    visibility: visible; 
-    animation-duration: 1s; 
-    animation-delay: 0s; 
+    height: 100%;
+    transform-origin: right center;
   }
+      
+@keyframes bg {
+    0% {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+    100% {
+          transform: translateX(0);
+        }
+      }
 
+#maker .bg{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+#maker  .bg-wrap {
+    position: relative;
+    display: inline-block;
+    margin-top: -6px;
+    height: 80px;
+    width: 1440px;
+    animation: bg .5s linear;
+  }
+#maker .bg.is-animated .bg-wrap::before {
+    animation: bg .5s linear;
+    background:#5e7a8f;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: right center;
+  }
+      
+@keyframes bg {
+    0% {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+    100% {
+          transform: translateX(0);
+        }
+      }
+#contact .bg{
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+#contact  .bg-wrap {
+        position: relative;
+        display: inline-block;
+        margin-top: -6px;
+        height: 80px;
+        width: 1440px;
+        animation: bg .5s linear;
+      }
+#contact .bg.is-animated .bg-wrap::before {
+        animation: bg .5s linear;
+        background:#5e7a8f;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: right center;
+      }
+
+/* 	slideinright背景白
+-----------------------------*/
+
+#compliance .bg{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+#compliance  .bg-wrap {
+    position: relative;
+    display: inline-block;
+    margin-top: -6px;
+    height: 80px;
+    width: 1440px;
+    animation: bg .5s linear;
+  }
+#compliance .bg.is-animated .bg-wrap::before {
+    animation: bg .5s linear;
+    background:#fff;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: right center;
+  }
+      
+@keyframes bg {
+    0% {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+    100% {
+          transform: translateX(0);
+          transition: all 1.0s;
+        }
+      }
+
+#products .bg{
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+#products  .bg-wrap {
+        position: relative;
+        display: inline-block;
+        margin-top: -6px;
+        height: 80px;
+        width: 1440px;
+        animation: bg .5s linear;
+      }
+#products .bg.is-animated .bg-wrap::before {
+        animation: bg .5s linear;
+        background:#fff;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: right center;
+      }
